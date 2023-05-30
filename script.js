@@ -25,29 +25,18 @@ function ReemplazarDesencriptar(string) {
         'ober': 'o',
         'ufat': 'u'
     }
-    /*return string.replaceAll(/enter/ig, "e").replaceAll(/imes/ig, "i").replaceAll(/ai/ig, "a").replaceAll(/ober/ig, "o").replaceAll(/ufat/ig, "u")*/
     return string.replaceAll(/enter|imes|ai|ober|ufat/ig, i => vocales[i]);
 
 }
 
 function BtnEncriptar() {
     txtEncriptado = document.getElementById("txtEncriptar")
-
-    //document.write(txtEncriptado.value)//Quitar
-    //document.write("<br>")//Quitar
-
-    //document.write(ReemplazarEncriptar(txtEncriptado.value.toLowerCase()))
     txtDesencriptado.value = ReemplazarEncriptar(txtEncriptado.value.toLowerCase())
     ocultarImagenes()
 }
 
 function BtnDesencriptar() {
     txtEncriptado = document.getElementById("txtEncriptar")
-
-    //document.write("TEXTO ENCRIPTADO: " + txtEncriptado.value)//Quitar
-    //document.write("<br>")//Quitar
-
-    //document.write(ReemplazarDesencriptar(txtEncriptado.value.toLowerCase()))
     txtDesencriptado.value = ReemplazarDesencriptar(txtEncriptado.value.toLowerCase())
     ocultarImagenes()
 

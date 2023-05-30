@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Encriptador de Texto</title>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="imagenes/Logo.svg" alt="logo">
+        </header>
+        <main>
+            <section class="cajaIngresarTexto">
+                <textarea id="txtEncriptar" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="botones">
+                    <label id="advertencia"><img src="imagenes/bi_exclamation-circle-fill.svg" alt="advertencia">
+                        Solo letras en minúsculas sin acentos</label>
+                <!--<div class="botones">-->
+                    <button id="btnEncriptar" class="diseñoBotones">Encriptar</button>
+                    <button id="btnDesencriptar" class="diseñoBotones">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="cajaMostrarTexto">
+                <textarea id="txtDesencriptar"></textarea>
+                <!--<buttion id="borrar">X</button>-->
+                <img id="imagenEsperarTexto" class="imagenEsperarTexto" src="imagenes/Muñeco.svg" alt="muñeco">
+                <h1 id="tituloUno" class="tituloUno">Ningún mensaje fue encontrado. </h1>
+                <h2 id="tituloDos" class="tituloDos">Ingrese el texto que desees encriptar o desencriptar</h2>
+                <div class="botonCopiar">
+                    <button id="btnCopiar" class="diseñoBotones">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+
+    </body>
+    <footer>
+        <label>Diseño de AluraLatam por Oracle</label>
+        <br>
+        <label>Elaborado por: Joseph Santiago Leon</label>
+
+    </footer>
+    <script src="script.js"></script>
+    <!--<script>
+            let txtEncriptado = document.getElementById("txtEncriptar")
+            let btnEncriptar = document.getElementById("btnEncriptar")
+            let btnDesencriptar = document.getElementById("btnDesencriptar")
+
+            function ReemplazarEncriptar(string) {
+                const vocales = {
+                    'e': 'enter',
+                    'i': 'imes',
+                    'a': 'ai',
+                    'o': 'ober',
+                    'u': 'ufat'
+                }
+                return string.replaceAll(/[eiaou]/g, i => vocales[i])
+            }
+
+            function ReemplazarDesencriptar(string) {
+                /*let vocales = {
+                    'enter': 'e',
+                    'imes' : 'i',
+                    'ai': 'a',            
+                    'ober': 'o',
+                    'ufat': 'u'
+                }*/
+                return string.replaceAll(/enter/ig, "e").replaceAll(/imes/ig, "i").replaceAll(/ai/ig, "a").replaceAll(/ober/ig, "o").replaceAll(/ufat/ig, "u")
+            }
+
+            function BtnEncriptar() {
+                txtEncriptado = document.getElementById("txtEncriptar")
+
+                //document.write(txtEncriptado.value)//Quitar
+                //document.write("<br>")//Quitar
+
+                //document.write(ReemplazarEncriptar(txtEncriptado.value.toLowerCase()))
+                document.getElementById("txtDesencriptar").value = ReemplazarEncriptar(txtEncriptado.value.toLowerCase())
+            }
+
+            function BtnDesencriptar() {
+                txtEncriptado = document.getElementById("txtEncriptar")
+
+                //document.write("TEXTO ENCRIPTADO: " + txtEncriptado.value)//Quitar
+                //document.write("<br>")//Quitar
+
+                //document.write(ReemplazarDesencriptar(txtEncriptado.value.toLowerCase()))
+                document.getElementById("txtDesencriptar").value = ReemplazarDesencriptar(txtEncriptado.value.toLowerCase())
+                
+            }
+
+            btnEncriptar.onclick = BtnEncriptar
+            btnDesencriptar.onclick = BtnDesencriptar
+        </script>-->
+
+</html>

@@ -1,0 +1,286 @@
+/** {
+    outline: 1px solid red;
+
+}
+*/
+body {
+    background: #F3F5FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    display: inline;
+    height: 88px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: relative;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+main {
+    display: block;
+    top: 40px;
+    text-align: right;
+    margin: 0 40px;
+    box-sizing: border-box;
+}
+
+.cajaIngresarTexto {
+    display: inline-block;
+    /*width: 680px;
+            47.2%
+            740px
+            51.38*/
+    width: 58%;
+    height: 860px;
+    padding-right: 80px;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+
+#txtEncriptar {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    /* or 48px */
+
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: 0;
+
+    resize: none;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 97px;
+}
+
+#txtEncriptar::placeholder{
+    opacity: 90%;
+}
+
+.botones {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.botones label {
+    display: block;
+    text-align: left;
+    margin-bottom: 16px;
+    color: #495057;
+}
+
+#btnEncriptar {
+    /*flex-direction: row;
+    align-items: flex-start;*/
+    padding: 24px;
+    gap: 8px;
+
+    width: 300px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    /*flex: none;
+    order: 0;
+    flex-grow: 0;*/
+    border: 1px solid #0A3871;
+
+    color: white;
+    font-size: 14px;
+}
+
+#btnDesencriptar {
+    /*box-sizing: border-box;*/
+    margin-left: 24px;
+    /* Auto layout */
+    /* flex-direction: row;
+    align-items: flex-start;*/
+    padding: 24px;
+    gap: 8px;
+
+    width: 300px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+    border-radius: 24px;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+
+    /* Inside auto layout */
+    /*flex: none;
+    order: 1;
+    flex-grow: 0;*/
+
+    font-size: 14px;
+}
+
+.diseñoBotones:hover {
+    
+    transition: 1s all;
+    cursor: pointer;
+    /*font-weight: bold;
+    /*background: #072e5e;*/
+    border: 1.5px solid #1289ff!important;
+    transform: scale(1.1);
+
+}
+/*
+#btnDesencriptar:hover {
+    cursor: pointer;
+    font-weight: bold;
+    /*background: #b5c5da;
+    border: 1.5px solid #1289ff;
+
+}*/
+
+.cajaMostrarTexto {
+
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 400px;
+    height: 944px;
+    padding: 32px 32px 131px 32px;
+    /*top: 40px;*/
+
+    /* White */
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    box-sizing: border-box;
+}
+
+#txtDesencriptar {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    /* or 36px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+    border: 0;
+
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+
+}
+
+.imagenEsperarTexto {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 34.9px;
+    top: 283px;
+}
+
+.tituloUno {
+    width: 85%;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+
+    position: absolute;
+    top: 583px;
+    left: 34.9px;
+
+    /* or 29px */
+    text-align: center;
+
+    /* Gray/gray-500 */
+    color: #343A40;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.tituloDos {
+    position: absolute;
+    width: 85%;
+    top: 650px;
+    left: 34.9px;
+
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#btnCopiar{
+    /*box-sizing: border-box;*/
+    margin-left: 24px;
+    /* Auto layout */
+    /* flex-direction: row;
+    align-items: flex-start;*/
+    padding: 24px;
+    gap: 8px;
+
+    width: 300px;
+    height: 67px;
+
+    /* Light gray */
+    background: #D8DFE8;
+    border-radius: 24px;
+
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+
+    /* Inside auto layout */
+    /*flex: none;
+    order: 1;
+    flex-grow: 0;*/
+
+    font-size: 14px;
+}
+
+  
+/*Si el la pantalla es mas grande que aumente el tamaño de la letra +3px
